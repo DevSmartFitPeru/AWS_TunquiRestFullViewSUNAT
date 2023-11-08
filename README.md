@@ -24,7 +24,9 @@ _Herramientas utilizadas para este proyecto_
 ## Example de Request ✒️
 -Url para consulta via metodo Get!!!
 http://10.84.8.2:2069/tunquiapiconsultasunat/20511315922/01/F001/658376/2023-11-07/6723.72
+
   _Request con exito!!!
+
 ````json response success!!!
 {
   "System": "SmartTunquiRestFull",
