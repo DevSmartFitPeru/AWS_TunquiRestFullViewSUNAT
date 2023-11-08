@@ -21,6 +21,20 @@ _Herramientas utilizadas para este proyecto_
 * R1 RECIBO POR HONORARIOS
 * R7 NOTA DE CREDITO DE RECIBOS
 
+## Example de Request ✒️
+
+http://10.84.8.2:2069/tunquiapiconsultasunat/20511315922/01/F001/658376/2023-11-07/6723.72
+
+{
+    "System": "SmartTunquiRestFull",
+    "fuente": "Servicios Rest SUNAT - RealTime",
+    "nro_invoice": "F001-658376",
+    "ruc_emisor": "20511315922",
+    "status_comprobante": "ACEPTADO",
+    "status_ruc_emisor": "ACTIVO",
+    "type_document_fiscal": "FACTURA ELECTRÓNICA"
+}
+
 ## Autores ✒️
 
 _Personas Involucradas en el Inicio del Desarrollo_
