@@ -10,7 +10,21 @@ _Agrega notas referenciales al deploy a realizar previa validacion en tu ambient
 _Herramientas utilizadas para este proyecto_
 
 * [Flask - Python](https://flask.palletsprojects.com/en/3.0.x/) - ID de Desarrollo
-* [Servicios Rest Full](https://cdn.www.gob.pe/uploads/document/file/536289/Manual_de_Consulta_Integrada_de_Validez_de_CdP_por_Servicio_WEB.pdf?v=1583255585) - Servicios Implementados
+* [Servicios Rest Full](https://cdn.www.gob.pe/uploads/document/file/536289/Manual_de_Consulta_Integrada_de_Validez_de_CdP_por_Servicio_WEB.pdf?v=1583255585) - Servicios Implementados de SUNAT
+
+  ##VALIDACION DE DOCUMENTOS FISCALES
+
+  Código Descripción
+01 FACTURA
+03 BOLETA DE VENTA
+04 LIQUIDACIÓN DE COMPRA
+07 NOTA DE CREDITO
+08
+R1
+R7
+NOTA DE DEBITO
+RECIBO POR HONORARIOS
+NOTA DE CREDITO DE RECIBOS
 
 ## Autores ✒️
 
