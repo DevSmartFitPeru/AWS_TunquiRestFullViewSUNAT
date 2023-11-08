@@ -11,9 +11,8 @@ _Herramientas utilizadas para este proyecto_
 
 * [Flask - Python](https://flask.palletsprojects.com/en/3.0.x/) - ID de Desarrollo
 * [Servicios Rest Full](https://cdn.www.gob.pe/uploads/document/file/536289/Manual_de_Consulta_Integrada_de_Validez_de_CdP_por_Servicio_WEB.pdf?v=1583255585) - Servicios Implementados de SUNAT
+## Tipo de Documentos Fiscales habilitados para la validacion 📦
 
-  ##VALIDACION DE DOCUMENTOS FISCALES
-  _Tipos de Documentos Fiscales habilitados para validacion en Real Time
 * 01 FACTURA  
 * 03 BOLETA DE VENTA  
 * 04 LIQUIDACIÓN DE COMPRA
