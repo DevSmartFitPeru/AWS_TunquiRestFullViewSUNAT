@@ -1,9 +1,10 @@
-# SmartTunqui AWS Rest Full - AWS PERU
+# SmartTunqui AWS Rest Full - AWS PERUUUU
 
 _Sistema que permite consultar cualquier tipo de documento fiscal en SUNAT en tiempo Real
-## Despliegue 📦
+## Desploy 📦
 
 _Agrega notas referenciales al deploy a realizar previa validacion en tu ambiente local._
+https://www.youtube.com/watch?v=snDW-5n01ak
 
 ## Construido con 🛠️
 
