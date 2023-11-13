@@ -131,7 +131,7 @@ if server_name and ':' in server_name:
     host, port = server_name.split(":")
     port = int(port)
 else:
-    port = 1248
+    port = 1247
     host = "0.0.0.0"
     app.run(debug=True,host=host, port=port)
 
