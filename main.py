@@ -1,5 +1,7 @@
 import requests as requests
 from flask import Flask, jsonify,request,json
+from werkzeug.exceptions import HTTPException
+import jsonpickle
 #import awsgi
 from pyathena import connect
 from datetime import datetime
@@ -116,16 +118,24 @@ def string(numRuc,codComp,numeroSerie,numero,fechaEmision,monto):
         return  mensaje_al_mortal
 
     elif format_booleando == "false":
-        response_doc_fiscal
+        jsonpickle.encode(response_doc_fiscal)
     else:
         response_doc_fiscal
-    return  response_doc_fiscal
+    return  jsonpickle.encode(response_doc_fiscal)
+
 @app.route('/deploy')
 def index():
     return jsonify(status=200, message='API SUNAT Online AWS')
 #def lambda_handler(event, context):
     # return awsgi.response(app, event, context, base64_content_types={"image/png"})
+@app.errorhandler(Exception)
+def handle_exception(e):
+    # pass through HTTP errors
+    if isinstance(e, HTTPException):
+        return e
 
+    # now you're handling non-HTTP exceptions only
+    return json(e), 500
 server_name = app.config['SERVER_NAME']
 if server_name and ':' in server_name:
     host, port = server_name.split(":")
