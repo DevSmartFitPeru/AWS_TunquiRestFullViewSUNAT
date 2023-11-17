@@ -1,6 +1,6 @@
 import requests as requests
 from flask import Flask, jsonify,request,json
-import awsgi
+#import awsgi
 from pyathena import connect
 from datetime import datetime
 
@@ -123,8 +123,8 @@ def string(numRuc,codComp,numeroSerie,numero,fechaEmision,monto):
 @app.route('/deploy')
 def index():
     return jsonify(status=200, message='API SUNAT Online AWS')
-def lambda_handler(event, context):
-    return awsgi.response(app, event, context, base64_content_types={"image/png"})
+#def lambda_handler(event, context):
+    # return awsgi.response(app, event, context, base64_content_types={"image/png"})
 
 server_name = app.config['SERVER_NAME']
 if server_name and ':' in server_name:
