@@ -143,6 +143,6 @@ if server_name and ':' in server_name:
 else:
     port = 1248
     host = "0.0.0.0"
-    app.run(debug=True,host=host, port=port)
+    app.run(debug=False,host=host, port=port)
 
 #Consulta de status de Documento Fiscal CHUNAT
