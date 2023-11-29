@@ -16,15 +16,15 @@ headerss = {
   'Cookie': 'BIGipServerpool-e-plataformaunica-https=!JPVeQyTpCFQ7RtMHZp9yNlHgef0B46QfzCTQCe1dBTzhCHQUT9BWZrxQYJAOTLaeZ+zFs2/sTHLqbA==; TS019e7fc2=019edc9eb8342c91ebb7e7c7ae91f2fd531370b1d139ca79a553735935e155ec5d1334574d97c081f5cc2e44ccf89b3d1b7cc48ca5'
 }
 
-response_token = requests.request("POST", url_token, headers=headerss, data=payloadd)
-get_token =  response_token.text
-#Extraccion de Token
-data = json.loads(get_token)
-token = data['access_token']#Receuperacion de Token unico para cada peticion de invoice
-#print(token)
-
 @app.route('/tunquiapiconsultasunat/<numRuc>/<codComp>/<numeroSerie>/<numero>/<fechaEmision>/<monto>')
 def string(numRuc,codComp,numeroSerie,numero,fechaEmision,monto):
+    #GENERAMOS EL TOKEN PARA CADA PETICION
+    response_token = requests.request("POST", url_token, headers=headerss, data=payloadd)
+    get_token = response_token.text
+    # Extraccion de Token
+    data = json.loads(get_token)
+    token = data['access_token']  # Receuperacion de Token unico para cada peticion de invoice
+    # print(token)
 
     numRucAPI= numRuc
     codCompAPI= codComp
