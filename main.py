@@ -80,7 +80,7 @@ def string(numRuc,codComp,numeroSerie,numero,fechaEmision,monto):
             name_doc_fiscal = "TIPO DE COMPROBANTE NO IDENTIFICADO, FAVOR DE VERIFICAR"
 
         if status_doc_fiscal =="0":
-            mensaje_al_mortal  = {"System": "SmartTunquiRestFull","errorCode": "100","Menssage":"LA FACTURA INGRESADA NO EXISTE, VERIFICAR LOS DATOS EN EL PDF Y VOLVER A CONSULTAR","success": "false"}
+            mensaje_al_mortal  = {"System": "SmartTunquiRestFull","errorCode": "100","message":"LA FACTURA INGRESADA NO EXISTE, VERIFICAR LOS DATOS EN EL PDF Y VOLVER A CONSULTAR","success": "false"}
             return  mensaje_al_mortal
 
         elif status_doc_fiscal == "1":
